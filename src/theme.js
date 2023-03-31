@@ -9,6 +9,10 @@ export const theme=createTheme({
         secondary : {
             main : '#15c630'
         },
+        dark :{
+            main : "#111",
+            light : "#222"
+        },
         otherColor : {
             main : "#999"
         }
