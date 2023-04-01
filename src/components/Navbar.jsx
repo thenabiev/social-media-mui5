@@ -57,8 +57,8 @@ const [open, setOpen]=useState(false)
                 cursor:'pointer'
             }}
             />
-            <Search >
-                <InputBase sx={{width:'100%'}} placeholder='Search...'/>
+            <Search>
+                <InputBase sx={{flex:1}} placeholder='Search...' />
             </Search>
             <Icons >
                 <Badge 

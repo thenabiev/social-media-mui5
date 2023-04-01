@@ -14,13 +14,21 @@ const Sidebar = () => {
         },
     }}
     >
+      <Box position="fixed">
       <List>
           <ListItem disablePadding>
             <ListItemButton component="a" href='#home'>
               <ListItemIcon>
                 <Home />
               </ListItemIcon>
-              <ListItemText primary="Homepage" />
+              <ListItemText 
+              sx={{
+                display:{
+                  xs:"none",
+                  md:"block"
+                }
+              }}
+              primary="Homepage" />
             </ListItemButton>
           </ListItem>
 
@@ -29,7 +37,14 @@ const Sidebar = () => {
               <ListItemIcon>
                 <Article />
               </ListItemIcon>
-              <ListItemText primary="Pages" />
+              <ListItemText 
+              sx={{
+                display:{
+                  xs:"none",
+                  md:"block"
+                }
+              }}
+              primary="Pages" />
             </ListItemButton>
           </ListItem>
 
@@ -38,7 +53,14 @@ const Sidebar = () => {
               <ListItemIcon>
                 <Group />
               </ListItemIcon>
-              <ListItemText primary="Groups" />
+              <ListItemText 
+              sx={{
+                display:{
+                  xs:"none",
+                  md:"block"
+                }
+              }}
+              primary="Groups" />
             </ListItemButton>
           </ListItem>
 
@@ -47,7 +69,14 @@ const Sidebar = () => {
               <ListItemIcon>
                 <Storefront />
               </ListItemIcon>
-              <ListItemText primary="Marketplace" />
+              <ListItemText 
+              sx={{
+                display:{
+                  xs:"none",
+                  md:"block"
+                }
+              }}
+              primary="Marketplace" />
             </ListItemButton>
           </ListItem>
 
@@ -56,7 +85,14 @@ const Sidebar = () => {
               <ListItemIcon>
                 <Person />
               </ListItemIcon>
-              <ListItemText primary="Friends" />
+              <ListItemText 
+              sx={{
+                display:{
+                  xs:"none",
+                  md:"block"
+                }
+              }}
+              primary="Friends" />
             </ListItemButton>
           </ListItem>
 
@@ -65,7 +101,14 @@ const Sidebar = () => {
               <ListItemIcon>
                 <Settings />
               </ListItemIcon>
-              <ListItemText primary="Settings" />
+              <ListItemText 
+              sx={{
+                display:{
+                  xs:"none",
+                  md:"block"
+                }
+              }}
+              primary="Settings" />
             </ListItemButton>
           </ListItem>
 
@@ -74,7 +117,14 @@ const Sidebar = () => {
               <ListItemIcon>
                 <AccountBox />
               </ListItemIcon>
-              <ListItemText primary="Profile" />
+              <ListItemText 
+              sx={{
+                display:{
+                  xs:"none",
+                  md:"block"
+                }
+              }}
+              primary="Profile" />
             </ListItemButton>
           </ListItem>
 
@@ -87,6 +137,7 @@ const Sidebar = () => {
             </ListItemButton>
           </ListItem>
         </List>
+      </Box>
     </Box>
   )
 }

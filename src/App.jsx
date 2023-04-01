@@ -1,5 +1,6 @@
 import { Box, Stack } from '@mui/material'
 import React from 'react'
+import AddComponent from './components/Add'
 import Feed from './components/Feed'
 import Navbar from './components/Navbar'
 import Rightbar from './components/Rightbar'
@@ -14,6 +15,7 @@ const App = () => {
         <Feed />
         <Rightbar />
       </Stack>
+      <AddComponent />
     </Box>
   )
 }
