@@ -53,23 +53,29 @@ const [open, setOpen]=useState(false)
                 display:{
                     xs:'block',
                     sm:"none"
-                }
+                },
+                cursor:'pointer'
             }}
             />
             <Search >
-                <InputBase placeholder='Search...'/>
+                <InputBase sx={{width:'100%'}} placeholder='Search...'/>
             </Search>
             <Icons >
-                <Badge badgeContent={4} color='error'>
+                <Badge 
+                sx={{cursor:'pointer'}}
+                badgeContent={4} color='error'>
                     <Mail />
                 </Badge>
-                <Badge badgeContent={2} color='error'>
+                <Badge 
+                sx={{cursor:'pointer'}}
+                badgeContent={2} color='error'>
                     <Notifications />
                 </Badge>
                 <Avatar 
                 sx={{
                     height:30,
-                    width:30
+                    width:30,
+                    cursor:'pointer'
                 }}
                 src='https://i.pinimg.com/736x/18/73/9d/18739d16ecc461b74796a3d95fa97695.jpg'
                 onClick={()=>setOpen(true)}
@@ -81,7 +87,8 @@ const [open, setOpen]=useState(false)
                 <Avatar 
                 sx={{
                     height:30,
-                    width:30
+                    width:30,
+                    cursor:'pointer'
                 }}
                 src='https://i.pinimg.com/736x/18/73/9d/18739d16ecc461b74796a3d95fa97695.jpg'
                 />
