@@ -11,8 +11,8 @@ const [open, setOpen]=useState(false)
         justifyContent:'space-between'
     })
 
-    const Search=styled("div")(({theme})=>({
-        backgroundColor: '#fff',
+    const Search=styled(Box)(({theme})=>({
+        // backgroundColor: '#fff',
         padding: '0 10px',
         borderRadius: theme.shape.borderRadius,
         width:"35%"
@@ -57,7 +57,7 @@ const [open, setOpen]=useState(false)
                 cursor:'pointer'
             }}
             />
-            <Search>
+            <Search  bgcolor={"background.default"} color={"text.primary"}>
                 <InputBase sx={{flex:1}} placeholder='Search...' />
             </Search>
             <Icons >

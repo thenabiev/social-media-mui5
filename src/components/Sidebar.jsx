@@ -1,8 +1,8 @@
-import { AccountBox, Article, Group, Home, ModeNight, Pages, Person, Settings, Storefront } from '@mui/icons-material'
+import { AccountBox, Article, Group, Home, LightMode, ModeNight, Pages, Person, Settings, Storefront } from '@mui/icons-material'
 import { Box, List, ListItem, ListItemButton, ListItemIcon, ListItemText, Switch } from '@mui/material'
 import React from 'react'
 
-const Sidebar = () => {
+const Sidebar = ({setMode, mode}) => {
   return (
     <Box 
     flex={1}
@@ -131,9 +131,11 @@ const Sidebar = () => {
           <ListItem disablePadding>
             <ListItemButton component="a" href='#home'>
               <ListItemIcon>
-                <ModeNight />
+                {
+                  mode==="light" ? (<ModeNight />) : (<LightMode />)
+                }
               </ListItemIcon>
-              <Switch />
+              <Switch onChange={()=>setMode(mode==="light" ? "dark" : "light")}/>
             </ListItemButton>
           </ListItem>
         </List>

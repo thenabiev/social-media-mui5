@@ -13,12 +13,13 @@ const UserBox=styled(Box)({
     alignItems:'center',
     gap:'10px',
     marginBottom:'20px',
-    marginTop:"10px"
+    marginTop:"10px",
+
+
 })
 
 const AddComponent = () => {
     const [open, setOpen]=useState(false)
-    console.log("Hi")
   return (
     <React.Fragment>
         <Tooltip 
@@ -41,7 +42,13 @@ const AddComponent = () => {
             aria-labelledby="modal-modal-title"
             aria-describedby="modal-modal-description"
         >
-          <Box width={400} minHeight={280} bgcolor="#fff" p={3} borderRadius={5}>
+          <Box 
+          bgcolor={"background.default"} color={"text.primary"}
+          width={400} 
+          minHeight={280} 
+        //   bgcolor="#fff" 
+          p={3} 
+          borderRadius={5}>
             <Typography variant='h6' color="gray">Create post</Typography>
             <UserBox>
                 <Avatar 

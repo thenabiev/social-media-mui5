@@ -7,7 +7,6 @@ const Feed = () => {
   return (
     <Box
     flex={4}
-    bgcolor="#fff"
     p={2}
     >
     <Post/>
